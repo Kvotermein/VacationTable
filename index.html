@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+	<body>
+		<div class='items'>
+			<form id="addVacation">
+				<select id=coWorkers>
+					<option id='selectWorker'>Select worker</option>
+				</select>	
+				<input type="date" class="date" min="">
+				<input type="number" class="quantityOfDays" max="15" min="2" name="Days">
+				<input type="button" value="Add vacation" class="saveVacation" disabled>
+			</form>
+			<table>
+				<tr class='itemsTitle__container'>
+					<td class='first__article' id="nameSort">Last name</td>
+					<td class='first__article'>Name</td>
+					<td class='first__article'>Position</td>
+					<td class='first__article' id="startDate">Start vacation</td>
+					<td class='first__article'>End vacation</td>
+				</tr>
+			</table>
+		</div>
+		<div id="snackbar">Must working more then 50% of workers in this position!</div>
+		<script src="js/model.js"></script>
+		<script src="js/View.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
